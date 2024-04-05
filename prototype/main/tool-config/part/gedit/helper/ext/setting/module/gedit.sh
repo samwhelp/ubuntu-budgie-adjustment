@@ -77,6 +77,9 @@ gedit_config_install () {
 
 	gedit_settings_set_all
 
+	gedit_config_install_by_dir
+
+
 	return 0
 }
 
@@ -99,7 +102,6 @@ gedit_prototype_install () {
 
 	return 0
 }
-
 
 ##
 ### Tail: Setting / Module / Gedit / Portal
@@ -171,4 +173,29 @@ gedit_gschema_put_all () {
 
 ##
 ### Tail: Setting / Module / Gedit / Gschema
+################################################################################
+
+
+################################################################################
+### Head: Setting / Module / Gedit / Config File
+##
+
+gedit_config_install_by_dir () {
+
+
+	echo
+	echo "mkdir -p ${HOME}"
+	mkdir -p "${HOME}"
+
+
+	echo
+	echo "cp -rf ./asset/overlay/etc/skel/. ${HOME}"
+	cp -rf "./asset/overlay/etc/skel/." "${HOME}"
+
+
+}
+
+
+##
+### Tail: Setting / Module / Gedit / Config File
 ################################################################################
