@@ -100,6 +100,8 @@ gedit_prototype_install () {
 
 	gedit_gschema_put_all
 
+	sys_gsettings_schemas_update
+
 	return 0
 }
 
@@ -165,8 +167,6 @@ gedit_gschema_put_all () {
 	util_error_echo sudo install -Dm644 "${source_gschema_override_file_path}" "${target_gschema_override_file_path}"
 	sudo install -Dm644 "${source_gschema_override_file_path}" "${target_gschema_override_file_path}"
 
-
-	sys_gsettings_schemas_update
 
 	return 0
 }

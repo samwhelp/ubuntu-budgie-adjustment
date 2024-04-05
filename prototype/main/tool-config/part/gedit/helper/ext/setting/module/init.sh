@@ -6,7 +6,7 @@
 
 
 ##
-## Load: Setting / Module / Dconf
+## Load: Setting / Module / Gsettings
 ##
 
 . "${THE_MAIN_EXT_SETTING_MODULE_DIR_PATH}/system-gsettings.sh"
