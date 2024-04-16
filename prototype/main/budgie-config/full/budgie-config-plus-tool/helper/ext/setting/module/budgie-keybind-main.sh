@@ -198,11 +198,13 @@ budgie_config_keybind_main () {
 
 	budgie_keybind_adjustment_config
 
+	budgie_keybind_system_config
+
 	budgie_keybind_window_config
 
 	budgie_keybind_workspace_config
 
-	budgie_keybind_start_here_config
+
 
 
 	return 0
@@ -326,7 +328,135 @@ budgie_keybind_adjustment_config_fix () {
 }
 
 ##
-### Tail: budgie / keybind / start_here
+### Tail: budgie / keybind / adjustment
+################################################################################
+
+
+
+
+################################################################################
+### Head: budgie / keybind / system
+##
+
+budgie_keybind_system_config () {
+
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## ## budgie_keybind_system_config"
+	util_error_echo "##"
+	util_error_echo
+
+
+	budgie_keybind_system_config_start
+
+	budgie_keybind_system_config_overview
+
+	budgie_keybind_system_config_raven
+
+	budgie_keybind_system_config_leave
+
+	budgie_keybind_system_config_screenshot
+
+
+	return 0
+
+}
+
+budgie_keybind_system_config_start () {
+
+
+	util_error_echo
+	util_error_echo "gsettings set org.gnome.desktop.wm.keybindings panel-main-menu \"['<Alt>F1']\""
+	gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['<Alt>F1']"
+
+
+	util_error_echo
+	util_error_echo "gsettings set org.gnome.desktop.wm.keybindings panel-run-dialog \"['<Alt>F2']\""
+	gsettings set org.gnome.desktop.wm.keybindings panel-run-dialog "['<Alt>F2']"
+
+
+
+
+	return 0
+
+}
+
+budgie_keybind_system_config_overview () {
+
+
+
+	return 0
+
+}
+
+budgie_keybind_system_config_raven () {
+
+
+	util_error_echo
+	util_error_echo "gsettings set com.solus-project.budgie-wm toggle-raven \"['<Super>m']\""
+	gsettings set com.solus-project.budgie-wm toggle-raven "['<Super>m']"
+
+
+
+
+	util_error_echo
+	util_error_echo "gsettings set com.solus-project.budgie-wm toggle-notifications \"['<Super>n']\""
+	gsettings set com.solus-project.budgie-wm toggle-notifications "['<Super>n']"
+
+
+	util_error_echo
+	util_error_echo "gsettings set com.solus-project.budgie-wm clear-notifications \"['<Super>b']\""
+	gsettings set com.solus-project.budgie-wm clear-notifications "['<Super>b']"
+
+
+
+
+
+	return 0
+
+}
+
+budgie_keybind_system_config_leave () {
+
+
+	util_error_echo
+	util_error_echo "gsettings set com.solus-project.budgie-wm show-power-dialog \"['<Alt><Shift>x']\""
+	gsettings set com.solus-project.budgie-wm show-power-dialog "['<Alt><Shift>x']"
+
+
+
+
+
+	return 0
+
+}
+
+budgie_keybind_system_config_screenshot () {
+
+
+	util_error_echo
+	util_error_echo "gsettings set com.solus-project.budgie-wm take-full-screenshot \"['Print']\""
+	gsettings set com.solus-project.budgie-wm take-full-screenshot "['Print']"
+
+
+	util_error_echo
+	util_error_echo "gsettings set com.solus-project.budgie-wm take-region-screenshot \"['<Ctrl>Print']\""
+	gsettings set com.solus-project.budgie-wm take-region-screenshot "['<Ctrl>Print']"
+
+
+	util_error_echo
+	util_error_echo "gsettings set com.solus-project.budgie-wm take-window-screenshot \"['<Super>Print']\""
+	gsettings set com.solus-project.budgie-wm take-window-screenshot "['<Super>Print']"
+
+
+
+
+	return 0
+
+}
+
+##
+### Tail: budgie / keybind / system
 ################################################################################
 
 
@@ -924,94 +1054,4 @@ budgie_keybind_workspace_config_move_to_workspace_specific () {
 
 ##
 ### Tail: budgie / keybind / workspace
-################################################################################
-
-
-
-
-################################################################################
-### Head: budgie / keybind / start_here
-##
-
-budgie_keybind_start_here_config () {
-
-	util_error_echo
-	util_error_echo "##"
-	util_error_echo "## ## budgie_keybind_start_here_config"
-	util_error_echo "##"
-	util_error_echo
-
-
-
-
-	budgie_keybind_start_here_config_overview
-
-
-
-
-	return 0
-
-}
-
-budgie_keybind_start_here_config_overview () {
-
-
-
-	# org.gnome.desktop.wm.keybindings panel-main-menu ['<Super>space', '<Alt>F2']
-
-
-
-	#echo 'gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "'"['<Super>Tab', '<Alt>F2']"'"'
-	#gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['<Super>Tab', '<Alt>F2']"
-
-
-	#echo 'gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "'"['<Alt>F2']"'"'
-	#gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['<Alt>F2']"
-
-	util_error_echo
-	util_error_echo "gsettings set org.gnome.shell.keybindings toggle-message-tray \"['<Super>m']\""
-	gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>m']"
-
-
-	##
-	## ## Overview
-	##
-
-	#gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>a']"
-	#gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>s']"
-
-
-	##
-	## overview / v1
-	##
-
-	util_error_echo
-	util_error_echo "gsettings set org.gnome.shell.keybindings toggle-application-view \"['<Super>grave', '<Super>Up']\""
-	gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>grave', '<Super>Up']"
-
-	util_error_echo
-	util_error_echo "gsettings set org.gnome.shell.keybindings toggle-overview \"['<Super>Tab', '<Super>Down']\""
-	gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>Tab', '<Super>Down']"
-
-
-	##
-	## overview / v2
-	##
-
-	#echo
-	#echo 'gsettings set org.gnome.shell.keybindings toggle-overview "'"['<Super>grave', '<Alt>Up']"'"'
-	#gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>grave', '<Alt>Up']"
-
-	#echo
-	#echo 'gsettings set org.gnome.shell.keybindings toggle-application-view "'"['<Super>Tab', '<Alt>j', '<Alt>Down']"'"'
-	#gsettings set org.gnome.shell.keybindings toggle-application-view "['<Super>Tab', '<Alt>j', '<Alt>Down']"
-
-
-
-	return 0
-
-}
-
-##
-### Tail: budgie / keybind / start_here
 ################################################################################

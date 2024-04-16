@@ -142,13 +142,13 @@ budgie_wallpaper_main_settings_set_all () {
 
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Clouds_by_Tibor_Mokanszki.jpg'"
-	gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Clouds_by_Tibor_Mokanszki.jpg'
+	util_error_echo "gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/budgie/roman-colosseum.jpg'"
+	gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/budgie/roman-colosseum.jpg'
 
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/share/backgrounds/Clouds_by_Tibor_Mokanszki.jpg'"
-	gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/share/backgrounds/Clouds_by_Tibor_Mokanszki.jpg'
+	util_error_echo "gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/share/backgrounds/budgie/roman-colosseum.jpg'"
+	gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/share/backgrounds/budgie/roman-colosseum.jpg'
 
 
 
@@ -158,8 +158,8 @@ budgie_wallpaper_main_settings_set_all () {
 
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/Clouds_by_Tibor_Mokanszki.jpg'"
-	gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/Clouds_by_Tibor_Mokanszki.jpg'
+	util_error_echo "gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/budgie/roman-colosseum.jpg'"
+	gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/budgie/roman-colosseum.jpg'
 
 
 

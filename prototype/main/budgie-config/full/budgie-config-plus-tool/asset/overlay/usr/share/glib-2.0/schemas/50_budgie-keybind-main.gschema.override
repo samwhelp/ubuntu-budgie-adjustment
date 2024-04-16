@@ -1,9 +1,13 @@
 
 
-[org.gnome.shell.keybindings]
-toggle-application-view=['<Super>grave', '<Alt>Up']
-toggle-overview=['<Super>Tab', '<Alt>Down']
-toggle-message-tray=['<Super>m']
+[com.solus-project.budgie-wm]
+clear-notifications=['<Super>b']
+toggle-notifications=['<Super>n']
+toggle-raven=['<Super>m']
+show-power-dialog=['<Alt><Shift>x']
+take-full-screenshot=['Print']
+take-region-screenshot=['<Ctrl>Print']
+take-window-screenshot=['<Super>Print']
 
 
 [org.gnome.desktop.wm.keybindings]
