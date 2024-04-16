@@ -75,7 +75,14 @@ gnome_terminal_var_dump
 
 gnome_terminal_config_install () {
 
-	util_error_echo "gnome_terminal_config_install"
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## ## gnome_terminal_config_install"
+	util_error_echo "##"
+	util_error_echo
+
+
+
 
 	gnome_terminal_settings_set_all
 
@@ -85,17 +92,34 @@ gnome_terminal_config_install () {
 
 gnome_terminal_asset_install () {
 
-	#util_error_echo "gnome_terminal_asset_install"
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## ## gnome_terminal_asset_install"
+	util_error_echo "##"
+	util_error_echo "## > Do Nothing"
+	util_error_echo "##"
+	util_error_echo
 
-	util_error_echo "!!! Do Nothing !!!"
+
+
+
 
 	return 0
+
 }
 
 
 gnome_terminal_prototype_install () {
 
-	#util_error_echo "gnome_terminal_prototype_install"
+
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## ## gnome_terminal_prototype_install"
+	util_error_echo "##"
+	util_error_echo
+
+
+
 
 	sys_dconf_init
 
@@ -127,7 +151,7 @@ gnome_terminal_config_by_gsettings () {
 
 
 	util_error_echo
-	util_error_echo 'gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false'
+	util_error_echo "gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false"
 	gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false
 
 
@@ -144,7 +168,9 @@ gnome_terminal_config_by_gsettings () {
 
 	local profile=$(gsettings get org.gnome.Terminal.ProfilesList default)
 	profile=${profile:1:-1} # remove leading and trailing single quotes
-	util_error_echo "profile=${profile}"
+	util_error_echo "##"
+	util_error_echo "## profile=${profile}"
+	util_error_echo "##"
 
 
 	util_error_echo
@@ -210,6 +236,10 @@ gnome_terminal_config_by_gsettings () {
 	util_error_echo "gsettings set \"org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${profile}/\" scrollback-unlimited true"
 	gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${profile}/" scrollback-unlimited true
 
+
+
+
+	util_error_echo
 
 	return 0
 
