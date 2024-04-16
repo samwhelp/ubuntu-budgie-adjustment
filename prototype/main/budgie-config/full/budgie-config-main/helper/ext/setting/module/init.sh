@@ -20,5 +20,12 @@
 
 
 ##
+## Load: Setting / Module / Budgie / Workspace Main
+##
+
+. "${THE_MAIN_EXT_SETTING_MODULE_DIR_PATH}/budgie-workspace-main.sh"
+
+
+##
 ### Tail: Setting / Module / Init
 ################################################################################

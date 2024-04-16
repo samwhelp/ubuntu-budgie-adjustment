@@ -41,7 +41,13 @@ main_asset_install () {
 
 	budgie_config_main_asset_install
 
+	budgie_workspace_main_asset_install
+
+
+
+
 	return 0
+
 }
 
 ##

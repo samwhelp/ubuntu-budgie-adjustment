@@ -41,7 +41,13 @@ main_config_install () {
 
 	budgie_config_main_config_install
 
+	budgie_workspace_main_config_install
+
+
+
+
 	return 0
+
 }
 
 ##
