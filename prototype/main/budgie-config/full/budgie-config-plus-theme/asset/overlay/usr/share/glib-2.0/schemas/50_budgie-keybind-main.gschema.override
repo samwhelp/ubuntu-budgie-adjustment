@@ -4,7 +4,7 @@
 clear-notifications=['<Super>b']
 toggle-notifications=['<Super>n']
 toggle-raven=['<Super>m']
-show-power-dialog=['<Alt><Shift>x']
+show-power-dialog=['<Control><Alt>x']
 take-full-screenshot=['Print']
 take-region-screenshot=['<Ctrl>Print']
 take-window-screenshot=['<Super>Print']
