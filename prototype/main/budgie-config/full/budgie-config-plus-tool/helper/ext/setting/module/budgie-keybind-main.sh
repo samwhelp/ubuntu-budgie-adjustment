@@ -351,7 +351,7 @@ budgie_keybind_system_config () {
 
 	budgie_keybind_system_config_overview
 
-	budgie_keybind_system_config_raven
+	budgie_keybind_system_config_quick
 
 	budgie_keybind_system_config_leave
 
@@ -389,7 +389,7 @@ budgie_keybind_system_config_overview () {
 
 }
 
-budgie_keybind_system_config_raven () {
+budgie_keybind_system_config_quick () {
 
 
 	util_error_echo
