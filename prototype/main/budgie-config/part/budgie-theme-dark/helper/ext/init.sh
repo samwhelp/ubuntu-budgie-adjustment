@@ -1,66 +1,75 @@
-#!/usr/bin/env bash
 
 
 ################################################################################
-### Head: Note
+### Head: Base / Init
 ##
 
 ##
 ## ## Link
 ##
-## * https://github.com/samwhelp/skel-project-plan/blob/master/develop/sh/project-helper/basic/helper/bin/prepare.sh
+## * https://github.com/samwhelp/skel-project-plan
 ##
 
+
+## set -e ##
+
+. "${THE_INIT_DIR_PATH}/base.sh"
+
+base_var_init
+
+base_var_dump
+
+
 ##
-### Tail: Note
+### Tail: Base / Init
+################################################################################
+
+
+
+
+################################################################################
+### Head: Main / Init
+##
+
+
+##
+## ## Load: Main
+##
+
+#. "${THE_MAIN_EXT_MAIN_DIR_PATH}/init.sh"
+
+##
+### Tail: Main / Init
 ################################################################################
 
 
 ################################################################################
-### Head: Init
+### Head: Master / Init
 ##
 
-set -e
-
-THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "${0}")" ; pwd)"
-THE_INIT_DIR_PATH="${THE_BASE_DIR_PATH}/helper/ext"
-. "${THE_INIT_DIR_PATH}/init.sh"
 
 ##
-### Tail: Init
+## ## Load: Master
+##
+
+#. "${THE_MAIN_EXT_MASTER_DIR_PATH}/init.sh"
+
+##
+### Tail: Master / Init
 ################################################################################
 
 
 ################################################################################
-### Head: Model / Start
+### Head: Settings / Init
 ##
 
-main_config_install () {
-
-	#util_error_echo 'main_config_install'
-
-	budgie_theme_main_config_install
-
-	return 0
-}
 
 ##
-### Tail: Model / Start
-################################################################################
-
-
-################################################################################
-### Head: Main
+## ## Load: Main
 ##
 
-__main__ () {
-
-	main_config_install "${@}"
-
-}
-
-__main__ "${@}"
+. "${THE_MAIN_EXT_SETTING_DIR_PATH}/init.sh"
 
 ##
-### Tail: Main
+### Tail: Settings / Init
 ################################################################################
