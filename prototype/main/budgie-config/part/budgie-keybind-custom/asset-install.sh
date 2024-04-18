@@ -39,7 +39,7 @@ main_asset_install () {
 
 	#util_error_echo 'main_asset_install'
 
-	gnome_shell_keybind_custom_asset_install
+	budgie_keybind_custom_asset_install
 
 
 

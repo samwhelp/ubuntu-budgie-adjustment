@@ -4,7 +4,7 @@
 ### Head: Setting / Module / Budgie / Variable
 ##
 
-gnome_shell_keybind_custom_var_init () {
+budgie_keybind_custom_var_init () {
 
 	THE_GNOME_SHELL_KEYBIND_CUSTOM_DCONF_DB_FILE_NAME="50_gnome-shell-keybind-custom.conf"
 
@@ -16,7 +16,7 @@ gnome_shell_keybind_custom_var_init () {
 
 }
 
-gnome_shell_keybind_custom_var_dump () {
+budgie_keybind_custom_var_dump () {
 
 
 	is_not_debug && return 0
@@ -26,7 +26,7 @@ gnome_shell_keybind_custom_var_dump () {
 
 	util_debug_echo
 	util_debug_echo "################################################################################"
-	util_debug_echo "### Head: gnome_shell_keybind_custom_var_dump"
+	util_debug_echo "### Head: budgie_keybind_custom_var_dump"
 	util_debug_echo "##"
 	util_debug_echo
 
@@ -47,7 +47,7 @@ gnome_shell_keybind_custom_var_dump () {
 
 	util_debug_echo
 	util_debug_echo "##"
-	util_debug_echo "### Tail: gnome_shell_keybind_custom_var_dump"
+	util_debug_echo "### Tail: budgie_keybind_custom_var_dump"
 	util_debug_echo "################################################################################"
 	util_debug_echo
 
@@ -61,8 +61,8 @@ gnome_shell_keybind_custom_var_dump () {
 
 }
 
-gnome_shell_keybind_custom_var_init
-gnome_shell_keybind_custom_var_dump
+budgie_keybind_custom_var_init
+budgie_keybind_custom_var_dump
 
 ##
 ### Tail: Setting / Module / Budgie / Variable
@@ -73,30 +73,30 @@ gnome_shell_keybind_custom_var_dump
 ### Head: Setting / Module / Budgie / Portal
 ##
 
-gnome_shell_keybind_custom_config_install () {
+budgie_keybind_custom_config_install () {
 
 
 	util_error_echo
 	util_error_echo "##"
-	util_error_echo "## ## gnome_shell_keybind_custom_config_install"
+	util_error_echo "## ## budgie_keybind_custom_config_install"
 	util_error_echo "##"
 	util_error_echo
 
 
 
 
-	gnome_shell_keybind_custom_settings_set_all
+	budgie_keybind_custom_settings_set_all
 
 	return 0
 }
 
 
-gnome_shell_keybind_custom_asset_install () {
+budgie_keybind_custom_asset_install () {
 
 
 	util_error_echo
 	util_error_echo "##"
-	util_error_echo "## ## gnome_shell_keybind_custom_asset_install"
+	util_error_echo "## ## budgie_keybind_custom_asset_install"
 	util_error_echo "##"
 	util_error_echo "## > Do Nothing"
 	util_error_echo "##"
@@ -110,12 +110,12 @@ gnome_shell_keybind_custom_asset_install () {
 }
 
 
-gnome_shell_keybind_custom_prototype_install () {
+budgie_keybind_custom_prototype_install () {
 
 
 	util_error_echo
 	util_error_echo "##"
-	util_error_echo "## ## gnome_shell_keybind_custom_prototype_install"
+	util_error_echo "## ## budgie_keybind_custom_prototype_install"
 	util_error_echo "##"
 	util_error_echo
 
@@ -124,7 +124,7 @@ gnome_shell_keybind_custom_prototype_install () {
 
 	sys_dconf_init
 
-	gnome_shell_keybind_custom_dconfdb_put_all
+	budgie_keybind_custom_dconfdb_put_all
 
 	sys_dconf_update
 
@@ -141,18 +141,18 @@ gnome_shell_keybind_custom_prototype_install () {
 ### Head: Setting / Module / Budgie / Settings
 ##
 
-gnome_shell_keybind_custom_settings_set_all () {
+budgie_keybind_custom_settings_set_all () {
 
-	gnome_shell_keybind_custom_config_by_gsettings
+	budgie_keybind_custom_config_by_gsettings
 
 	return 0
 
 }
 
-gnome_shell_keybind_custom_config_by_gsettings () {
+budgie_keybind_custom_config_by_gsettings () {
 
 
-	gnome_shell_config_keybind_custom
+	budgie_config_keybind_custom
 
 
 
@@ -172,16 +172,16 @@ gnome_shell_keybind_custom_config_by_gsettings () {
 ### Head: Setting / Module / Budgie / Dconf
 ##
 
-gnome_shell_keybind_custom_dconfdb_put_all () {
+budgie_keybind_custom_dconfdb_put_all () {
 
-	gnome_shell_keybind_custom_dconfdb_put_main
+	budgie_keybind_custom_dconfdb_put_main
 
 	return 0
 
 }
 
 
-gnome_shell_keybind_custom_dconfdb_put_main () {
+budgie_keybind_custom_dconfdb_put_main () {
 
 	local source_dconfdb_file_path="${THE_GNOME_SHELL_KEYBIND_CUSTOM_SOURCE_DCONF_DB_FILE_PATH}"
 
@@ -217,7 +217,7 @@ gnome_shell_keybind_custom_dconfdb_put_main () {
 ### Head: gnome-shell / keybind / custom
 ##
 
-gnome_shell_config_keybind_custom () {
+budgie_config_keybind_custom () {
 
 
 	##

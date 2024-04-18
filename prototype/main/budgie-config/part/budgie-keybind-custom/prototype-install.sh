@@ -39,7 +39,7 @@ main_prototype_install () {
 
 	#util_error_echo 'main_prototype_install'
 
-	gnome_shell_keybind_custom_prototype_install
+	budgie_keybind_custom_prototype_install
 
 
 
