@@ -45,6 +45,8 @@ main_prototype_install () {
 
 	budgie_keybind_main_prototype_install
 
+	budgie_keybind_custom_prototype_install
+
 	budgie_wallpaper_main_prototype_install
 
 
