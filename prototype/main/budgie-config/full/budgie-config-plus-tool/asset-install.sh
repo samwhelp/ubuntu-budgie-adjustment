@@ -45,6 +45,8 @@ main_asset_install () {
 
 	budgie_keybind_main_asset_install
 
+	budgie_keybind_custom_asset_install
+
 
 
 
