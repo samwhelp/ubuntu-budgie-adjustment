@@ -47,6 +47,8 @@ main_prototype_install () {
 
 	budgie_keybind_custom_prototype_install
 
+	gedit_prototype_install
+
 
 
 
