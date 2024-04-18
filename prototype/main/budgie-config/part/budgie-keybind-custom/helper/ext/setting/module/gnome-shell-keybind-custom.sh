@@ -1,7 +1,7 @@
 
 
 ################################################################################
-### Head: Setting / Module / Gnome-Shell / Variable
+### Head: Setting / Module / Budgie / Variable
 ##
 
 gnome_shell_keybind_custom_var_init () {
@@ -33,7 +33,7 @@ gnome_shell_keybind_custom_var_dump () {
 
 	util_debug_echo
 	util_debug_echo "##"
-	util_debug_echo "## ## Gnome-Shell / Gschema"
+	util_debug_echo "## ## Budgie / Gschema"
 	util_debug_echo "##"
 	util_debug_echo
 
@@ -65,12 +65,12 @@ gnome_shell_keybind_custom_var_init
 gnome_shell_keybind_custom_var_dump
 
 ##
-### Tail: Setting / Module / Gnome-Shell / Variable
+### Tail: Setting / Module / Budgie / Variable
 ################################################################################
 
 
 ################################################################################
-### Head: Setting / Module / Gnome-Shell / Portal
+### Head: Setting / Module / Budgie / Portal
 ##
 
 gnome_shell_keybind_custom_config_install () {
@@ -133,12 +133,12 @@ gnome_shell_keybind_custom_prototype_install () {
 
 
 ##
-### Tail: Setting / Module / Gnome-Shell / Portal
+### Tail: Setting / Module / Budgie / Portal
 ################################################################################
 
 
 ################################################################################
-### Head: Setting / Module / Gnome-Shell / Settings
+### Head: Setting / Module / Budgie / Settings
 ##
 
 gnome_shell_keybind_custom_settings_set_all () {
@@ -164,12 +164,12 @@ gnome_shell_keybind_custom_config_by_gsettings () {
 }
 
 ##
-### Tail: Setting / Module / Gnome-Shell / Settings
+### Tail: Setting / Module / Budgie / Settings
 ################################################################################
 
 
 ################################################################################
-### Head: Setting / Module / Gnome-Shell / Dconf
+### Head: Setting / Module / Budgie / Dconf
 ##
 
 gnome_shell_keybind_custom_dconfdb_put_all () {
@@ -203,7 +203,7 @@ gnome_shell_keybind_custom_dconfdb_put_main () {
 }
 
 ##
-### Tail: Setting / Module / Gnome-Shell / Dconf
+### Tail: Setting / Module / Budgie / Dconf
 ################################################################################
 
 

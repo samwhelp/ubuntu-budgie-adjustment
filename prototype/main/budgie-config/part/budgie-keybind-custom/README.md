@@ -1,5 +1,5 @@
 
-# Gnome-Shell
+# Budgie
 
 
 ## Ubuntu Package
