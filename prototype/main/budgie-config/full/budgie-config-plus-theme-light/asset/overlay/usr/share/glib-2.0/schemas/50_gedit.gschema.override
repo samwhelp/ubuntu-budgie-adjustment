@@ -6,7 +6,7 @@ display-right-margin=true
 editor-font='Monospace 14'
 highlight-current-line=true
 insert-spaces=false
-scheme='oblivion'
+scheme='solarized-light'
 tabs-size=uint32 4
 use-default-font=false
 
