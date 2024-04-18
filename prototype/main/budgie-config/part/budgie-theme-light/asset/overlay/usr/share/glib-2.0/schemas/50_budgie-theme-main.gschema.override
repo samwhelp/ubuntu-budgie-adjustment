@@ -5,7 +5,7 @@ theme='Pocillo-light'
 
 
 [org.gnome.desktop.interface]
-cursor-theme='Yaru'
+cursor-theme='DMZ-White'
 cursor-size=24
 gtk-key-theme='Default'
 gtk-theme='Pocillo-light'
@@ -16,4 +16,9 @@ gtk-color-scheme=''
 
 [org.gnome.desktop.sound]
 theme-name='freedesktop'
+
+
+[com.solus-project.budgie-panel]
+dark-theme=false
+
 

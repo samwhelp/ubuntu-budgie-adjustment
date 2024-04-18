@@ -153,8 +153,8 @@ budgie_theme_main_settings_set_all () {
 
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'"
-	gsettings set org.gnome.desktop.interface cursor-theme 'Yaru'
+	util_error_echo "gsettings set org.gnome.desktop.interface cursor-theme 'DMZ-Black'"
+	gsettings set org.gnome.desktop.interface cursor-theme 'DMZ-Black'
 
 
 	util_error_echo
@@ -196,6 +196,17 @@ budgie_theme_main_settings_set_all () {
 	util_error_echo
 	util_error_echo "gsettings set org.gnome.desktop.sound theme-name 'freedesktop'"
 	gsettings set org.gnome.desktop.sound theme-name 'freedesktop'
+
+
+
+
+
+
+
+
+	util_error_echo
+	util_error_echo "gsettings set com.solus-project.budgie-panel dark-theme true"
+	gsettings set com.solus-project.budgie-panel dark-theme true
 
 
 

@@ -386,8 +386,8 @@ budgie_config_keybind_custom () {
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/settings-shortcuts/name "'Settings_Shortcuts'"
 
 	util_error_echo
-	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/settings-shortcuts/command \"'gnome-control-center keyboard'\""
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/settings-shortcuts/command "'gnome-control-center keyboard'"
+	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/settings-shortcuts/command \"'budgie-desktop-settings'\""
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/settings-shortcuts/command "'budgie-desktop-settings'"
 
 	util_error_echo
 	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/settings-shortcuts/binding \"'<Shift><Alt>s'\""
