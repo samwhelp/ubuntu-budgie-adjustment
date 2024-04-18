@@ -47,7 +47,11 @@ main_asset_install () {
 
 	budgie_keybind_custom_asset_install
 
+	nemo_asset_install
+
 	gedit_asset_install
+
+	tilix_asset_install
 
 
 

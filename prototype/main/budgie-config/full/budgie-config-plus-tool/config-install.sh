@@ -47,7 +47,11 @@ main_config_install () {
 
 	budgie_keybind_custom_config_install
 
+	nemo_config_install
+
 	gedit_config_install
+
+	tilix_config_install
 
 
 

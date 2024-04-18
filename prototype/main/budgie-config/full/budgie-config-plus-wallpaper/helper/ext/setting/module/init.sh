@@ -48,10 +48,24 @@
 
 
 ##
+## Load: Setting / Module / Nemo
+##
+
+. "${THE_MAIN_EXT_SETTING_MODULE_DIR_PATH}/nemo.sh"
+
+
+##
 ## Load: Setting / Module / Gedit
 ##
 
 . "${THE_MAIN_EXT_SETTING_MODULE_DIR_PATH}/gedit.sh"
+
+
+##
+## Load: Setting / Module / Tilix
+##
+
+. "${THE_MAIN_EXT_SETTING_MODULE_DIR_PATH}/tilix.sh"
 
 
 ##

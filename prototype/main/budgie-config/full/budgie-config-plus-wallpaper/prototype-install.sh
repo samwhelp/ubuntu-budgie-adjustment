@@ -47,7 +47,11 @@ main_prototype_install () {
 
 	budgie_keybind_custom_prototype_install
 
+	nemo_prototype_install
+
 	gedit_prototype_install
+
+	tilix_prototype_install
 
 	budgie_wallpaper_main_prototype_install
 
