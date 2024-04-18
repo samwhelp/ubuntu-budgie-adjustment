@@ -41,6 +41,13 @@
 
 
 ##
+## Load: Setting / Module / Budgie / Keybind Custom
+##
+
+. "${THE_MAIN_EXT_SETTING_MODULE_DIR_PATH}/budgie-keybind-custom.sh"
+
+
+##
 ## Load: Setting / Module / Budgie / Wallpaper Main
 ##
 
