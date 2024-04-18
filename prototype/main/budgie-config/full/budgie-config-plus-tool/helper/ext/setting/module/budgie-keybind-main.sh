@@ -420,8 +420,8 @@ budgie_keybind_system_config_leave () {
 
 
 	util_error_echo
-	util_error_echo "gsettings set com.solus-project.budgie-wm show-power-dialog \"['<Control><Alt>x']\""
-	gsettings set com.solus-project.budgie-wm show-power-dialog "['<Control><Alt>x']"
+	util_error_echo "gsettings set com.solus-project.budgie-wm show-power-dialog \"['<Control><Alt>z']\""
+	gsettings set com.solus-project.budgie-wm show-power-dialog "['<Control><Alt>z']"
 
 
 

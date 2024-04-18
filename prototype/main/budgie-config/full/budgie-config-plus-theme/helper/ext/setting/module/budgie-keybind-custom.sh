@@ -272,8 +272,8 @@ budgie_config_keybind_custom () {
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-logout/name "'System_Logout'"
 
 	util_error_echo
-	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-logout/command \"'gnome-session-quit --logout'\""
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-logout/command "'gnome-session-quit --logout'"
+	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-logout/command \"'budgie-session-quit --logout'\""
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-logout/command "'budgie-session-quit --logout'"
 
 	util_error_echo
 	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-logout/binding \"'<Shift><Alt>x'\""
@@ -294,8 +294,8 @@ budgie_config_keybind_custom () {
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-reboot/name "'System_Rebot'"
 
 	util_error_echo
-	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-reboot/command \"'gnome-session-quit --reboot'\""
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-reboot/command "'gnome-session-quit --reboot'"
+	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-reboot/command \"'budgie-session-quit --reboot'\""
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-reboot/command "'budgie-session-quit --reboot'"
 
 	util_error_echo
 	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-reboot/binding \"'<Control><Alt>x'\""
@@ -316,8 +316,8 @@ budgie_config_keybind_custom () {
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-shutdown/name "'System_Shutdown'"
 
 	util_error_echo
-	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-shutdown/command \"'gnome-session-quit --power-off'\""
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-shutdown/command "'gnome-session-quit --power-off'"
+	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-shutdown/command \"'budgie-session-quit --power-off'\""
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-shutdown/command "'budgie-session-quit --power-off'"
 
 	util_error_echo
 	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-shutdown/binding \"'<Shift><Alt>z'\""
