@@ -45,6 +45,8 @@ main_config_install () {
 
 	budgie_keybind_main_config_install
 
+	budgie_keybind_custom_config_install
+
 
 
 
