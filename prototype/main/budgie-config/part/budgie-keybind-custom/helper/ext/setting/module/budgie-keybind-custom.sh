@@ -373,30 +373,6 @@ budgie_config_keybind_custom () {
 
 
 	##
-	## ## Toggle Show Desktop
-	##
-
-	util_error_echo
-	util_error_echo "##"
-	util_error_echo "## ## Toggle Show Desktop"
-	util_error_echo "##"
-
-	util_error_echo
-	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/name \"'Toggle_Show_Desktop'\""
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/name "'Toggle_Show_Desktop'"
-
-	util_error_echo
-	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/command \"'toggle-show-desktop.sh'\""
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/command "'toggle-show-desktop.sh'"
-
-	util_error_echo
-	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/binding \"'<Super>d'\""
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/binding "'<Super>d'"
-
-
-
-
-	##
 	## ## Settings Shortcuts
 	##
 
@@ -503,8 +479,8 @@ budgie_config_keybind_custom () {
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/name "'Terminal'"
 
 	util_error_echo
-	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/command \"'gnome-terminal'\""
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/command "'gnome-terminal'"
+	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/command \"'tilix'\""
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/command "'tilix'"
 
 	util_error_echo
 	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/binding \"'<Alt>Return'\""
@@ -525,8 +501,8 @@ budgie_config_keybind_custom () {
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-1/name "'Terminal-1'"
 
 	util_error_echo
-	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-1/command \"'gnome-terminal'\""
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-1/command "'gnome-terminal'"
+	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-1/command \"'tilix'\""
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-1/command "'tilix'"
 
 	util_error_echo
 	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-1/binding \"'<Shift><Alt>a'\""
@@ -614,8 +590,8 @@ budgie_config_keybind_custom () {
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor/name "'Text_Editor'"
 
 	util_error_echo
-	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor/command \"'gnome-text-editor'\""
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor/command "'gnome-text-editor'"
+	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor/command \"'gedit'\""
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor/command "'gedit'"
 
 	util_error_echo
 	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor/binding \"'<Shift><Alt>e'\""
@@ -658,8 +634,8 @@ budgie_config_keybind_custom () {
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager/name "'File_Manager'"
 
 	util_error_echo
-	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager/command \"'nautilus'\""
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager/command "'nautilus'"
+	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager/command \"'nemo'\""
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager/command "'nemo'"
 
 	util_error_echo
 	util_error_echo "dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager/binding \"'<Shift><Alt>f'\""
@@ -838,7 +814,7 @@ budgie_config_keybind_custom () {
 	util_error_echo "##"
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings \"['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-logout/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-reboot/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-shutdown/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-shuf/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/settings-shortcuts/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-run/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-window/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-drun/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-control/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-toggle-mute/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-decrease/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-increase/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-decrease-slowly/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-increase-slowly/']\""
+	util_error_echo "gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings \"['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-logout/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-reboot/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-shutdown/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-shuf/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/settings-shortcuts/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-run/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-window/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-drun/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-control/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-toggle-mute/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-decrease/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-increase/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-decrease-slowly/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-increase-slowly/']\""
 	gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-logout/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-reboot/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/system-shutdown/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-shuf/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/settings-shortcuts/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-run/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-window/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-drun/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-control/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-toggle-mute/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-decrease/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-increase/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-decrease-slowly/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-increase-slowly/']"
 
 
