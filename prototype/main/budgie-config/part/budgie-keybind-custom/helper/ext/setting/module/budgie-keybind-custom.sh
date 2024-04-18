@@ -6,7 +6,7 @@
 
 budgie_keybind_custom_var_init () {
 
-	THE_BUDGIE_KEYBIND_CUSTOM_DCONF_DB_FILE_NAME="50_gnome-shell-keybind-custom.conf"
+	THE_BUDGIE_KEYBIND_CUSTOM_DCONF_DB_FILE_NAME="50_budgie-keybind-custom.conf"
 
 	THE_BUDGIE_KEYBIND_CUSTOM_SOURCE_DCONF_DB_FILE_PATH="${THE_SOURCE_DCONFDB_DIR_PATH}/${THE_BUDGIE_KEYBIND_CUSTOM_DCONF_DB_FILE_NAME}"
 	THE_BUDGIE_KEYBIND_CUSTOM_TARGET_DCONF_DB_FILE_PATH="${THE_TARGET_DCONFDB_DIR_PATH}/${THE_BUDGIE_KEYBIND_CUSTOM_DCONF_DB_FILE_NAME}"
@@ -214,7 +214,7 @@ budgie_keybind_custom_dconfdb_put_main () {
 
 
 ################################################################################
-### Head: gnome-shell / keybind / custom
+### Head: budgie / keybind / custom
 ##
 
 budgie_config_keybind_custom () {
@@ -877,5 +877,5 @@ budgie_config_keybind_custom () {
 }
 
 ##
-### Tail: gnome-shell / keybind / custom
+### Tail: budgie / keybind / custom
 ################################################################################
