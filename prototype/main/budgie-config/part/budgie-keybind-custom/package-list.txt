@@ -8,10 +8,10 @@
 
 
 ##
-## ## Package / gnome-shell
+## ## Package / budgie-desktop
 ##
 
-gnome-shell
+budgie-desktop
 
 
 

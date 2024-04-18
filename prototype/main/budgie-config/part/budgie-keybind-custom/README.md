@@ -6,7 +6,7 @@
 
 | Ubuntu Package |
 | --- |
-| [gnome-shell](https://packages.ubuntu.com/noble/gnome-shell) |
+| [budgie-desktop](https://packages.ubuntu.com/noble/budgie-desktop) |
 
 
 ## Usage
