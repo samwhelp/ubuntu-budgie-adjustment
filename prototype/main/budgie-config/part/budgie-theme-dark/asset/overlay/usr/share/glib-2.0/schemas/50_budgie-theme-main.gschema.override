@@ -5,7 +5,7 @@ theme='Pocillo-dark'
 
 
 [org.gnome.desktop.interface]
-cursor-theme='DMZ-Black'
+cursor-theme='DMZ-White'
 cursor-size=24
 gtk-key-theme='Default'
 gtk-theme='Pocillo-dark'

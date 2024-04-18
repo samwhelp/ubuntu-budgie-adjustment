@@ -153,8 +153,8 @@ budgie_theme_main_settings_set_all () {
 
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.interface cursor-theme 'DMZ-White'"
-	gsettings set org.gnome.desktop.interface cursor-theme 'DMZ-White'
+	util_error_echo "gsettings set org.gnome.desktop.interface cursor-theme 'DMZ-Black'"
+	gsettings set org.gnome.desktop.interface cursor-theme 'DMZ-Black'
 
 
 	util_error_echo
