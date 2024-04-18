@@ -48,6 +48,13 @@
 
 
 ##
+## Load: Setting / Module / Gedit
+##
+
+. "${THE_MAIN_EXT_SETTING_MODULE_DIR_PATH}/gedit.sh"
+
+
+##
 ## Load: Setting / Module / Budgie / Wallpaper Main
 ##
 

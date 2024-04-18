@@ -47,6 +47,8 @@ main_config_install () {
 
 	budgie_keybind_custom_config_install
 
+	gedit_config_install
+
 	budgie_wallpaper_main_config_install
 
 

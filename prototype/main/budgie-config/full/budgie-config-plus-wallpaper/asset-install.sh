@@ -47,6 +47,8 @@ main_asset_install () {
 
 	budgie_keybind_custom_asset_install
 
+	gedit_asset_install
+
 	budgie_wallpaper_main_asset_install
 
 
