@@ -173,7 +173,7 @@ budgie_theme_main_settings_set_all () {
 
 
 	util_error_echo
-	util_error_echo "gsettings set org.gnome.desktop.interface icon-theme 'Yaru'"
+	util_error_echo "gsettings set org.gnome.desktop.interface icon-theme 'Pocillo'"
 	gsettings set org.gnome.desktop.interface icon-theme 'Pocillo'
 
 
