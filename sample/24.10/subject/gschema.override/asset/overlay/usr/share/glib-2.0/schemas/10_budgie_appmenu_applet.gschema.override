@@ -1,0 +1,2 @@
+[org.appmenu.gtk-module:budgie-desktop]
+blacklist=["acroread","budgie-panel","emacs","emacs23","emacs23-lucid","emacs24","emacs24-lucid"]
